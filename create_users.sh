@@ -4,7 +4,7 @@ LOG_FILE="/var/log/user_management.log"
 PASSWORD_FILE="/var/secure/user_passwords.txt"
 USER_FILE="$1"
 
-# Create log and password files 
+# Create log and password files with appropriate permissions 
 sudo touch $LOG_FILE
 sudo chmod 600 $LOG_FILE
 sudo chown root:root $LOG_FILE
