@@ -35,6 +35,7 @@ Welcome to the DevOps Stage 1 task! This project involves creating a bash script
 
 - Basic knowledge of Linux command line
 - SSH client (e.g., Terminal on macOS, PuTTY on Windows)
+- Knowlege of Bash scripting
 
 ### Installation
 
