@@ -1,70 +1,87 @@
-# HNG_DevOps_Project_Stage1
+# HNG DevOps Stage 1: Linux User Creation Bash Script
 
-DevOps Stage 1: Linux User Creation Bash Script
-Overview
-Welcome to the DevOps Stage 1 task! This project involves creating a bash script called create_users.sh to automate the process of user and group creation on a Linux system. The script reads a text file containing employee usernames and group names, creates the users and groups as specified, sets up home directories with appropriate permissions, generates random passwords, and logs all actions.
+## Overview
 
-Table of Contents
-Overview
-Features
-Technologies Used
-Setup and Deployment
-Prerequisites
-Installation
-Deployment
-Contact
-License
-Features
-Automated user and group creation
-Home directory setup with appropriate permissions
-Random password generation
-Logging of all actions
-Secure storage of generated passwords
-Technologies Used
-Bash Script
-Linux (Ubuntu)
-AWS EC2 (for deployment)
-Setup and Deployment
-Prerequisites
-AWS account
-Basic knowledge of Linux command line
-SSH client (e.g., Terminal on macOS, PuTTY on Windows)
-Installation
-Clone the Repository:
+Welcome to the DevOps Stage 1 task! This project involves creating a bash script called `create_users.sh` to automate the process of user and group creation on a Linux system. The script reads a text file containing employee usernames and group names, creates the users and groups as specified, sets up home directories with appropriate permissions, generates random passwords, and logs all actions.
 
-bash
-Copy code
-git clone <repository-url>
-cd <repository-directory>
-Save the Script: Save the script as create_users.sh.
+## Table of Contents
 
-Make the Script Executable:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup and Deployment](#setup-and-deployment)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Contact](#contact)
+- [License](#license)
 
-bash
-Copy code
-chmod +x create_users.sh
-Prepare the Input File: Create a file named users.txt with the desired content:
+## Features
 
-txt
-Copy code
-light; sudo,dev,www-data
-idimma; sudo
-mayowa; dev,www-data
-Deployment
-Run the Script:
+- Automated user and group creation
+- Home directory setup with appropriate permissions
+- Random password generation
+- Logging of all actions
+- Secure storage of generated passwords
 
-bash
-Copy code
-sudo ./create_users.sh users.txt
-Check the Log File: The log file should be located at /var/log/user_management.log.
+## Technologies Used
 
-bash
-Copy code
-sudo cat /var/log/user_management.log
-Check the Password File: The password file should be located at /var/secure/user_passwords.csv.
+- Bash Script
+- Linux (Ubuntu)
+- AWS EC2 (for deployment)
 
-bash
-Copy code
-sudo cat /var/secure/user_passwords.csv
-Contact
+## Setup and Deployment
+
+### Prerequisites
+
+- Basic knowledge of Linux command line
+- SSH client (e.g., Terminal on macOS, PuTTY on Windows)
+
+### Installation
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. **Save the Script:** Save the script as `create_users.sh`.
+
+3. **Make the Script Executable:**
+
+    ```bash
+    chmod +x create_users.sh
+    ```
+
+4. **Prepare the Input File:** Create a file named `users.txt` with the desired content:
+
+    ```txt
+    light; sudo,dev,www-data
+    idimma; sudo
+    mayowa; dev,www-data
+    ```
+
+### Usage
+
+1. **Run the Script:**
+
+    ```bash
+    sudo ./create_users.sh users.txt
+    ```
+
+2. **Check the Log File:** The log file should be located at `/var/log/user_management.log`.
+
+    ```bash
+    sudo cat /var/log/user_management.log
+    ```
+
+3. **Check the Password File:** The password file should be located at `/var/secure/user_passwords.txt`.
+
+    ```bash
+    sudo cat /var/secure/user_passwords.txt
+    ```
+
+## Contact
+
 Name: Oluwamayowa Olawumi
