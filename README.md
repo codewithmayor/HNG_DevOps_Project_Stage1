@@ -1,8 +1,5 @@
 # HNG_DevOps_Project_Stage1
 
-
-Sure, here's the README content formatted for easy copy-pasting:
-
 DevOps Stage 1: Linux User Creation Bash Script
 Overview
 Welcome to the DevOps Stage 1 task! This project involves creating a bash script called create_users.sh to automate the process of user and group creation on a Linux system. The script reads a text file containing employee usernames and group names, creates the users and groups as specified, sets up home directories with appropriate permissions, generates random passwords, and logs all actions.
