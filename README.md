@@ -85,3 +85,4 @@ Welcome to the DevOps Stage 1 task! This project involves creating a bash script
 ## Contact
 
 Name: Oluwamayowa Olawumi
+Email: codewithmayor@gmail.com
