@@ -28,7 +28,6 @@ Welcome to the DevOps Stage 1 task! This project involves creating a bash script
 
 - Bash Script
 - Linux (Ubuntu)
-- AWS EC2 (for deployment)
 
 ## Setup and Deployment
 
