@@ -42,8 +42,8 @@ Welcome to the DevOps Stage 1 task! This project involves creating a bash script
 1. **Clone the Repository:**
 
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/codewithmayor/HNG_DevOps_Project_Stage1
+    cd HNG_DevOps_Project_Stage1
     ```
 
 2. **Save the Script:** Save the script as `create_users.sh`.
